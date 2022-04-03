@@ -13,3 +13,17 @@ $(document).ready(function(){
         $(this).toggleClass("heart");
     })
 });
+
+var profilePicture = document.querySelector(".pewdiepie");
+var awardBox = document.querySelector("#awardBox");
+//When hover the picture, the box will pop out
+profilePicture.addEventListener("mouseover",function() {
+    profilePicture.style.cursor = "pointer";
+    awardBox.style.display = "block";
+})
+//When hover out the picture, the box will hide
+profilePicture.addEventListener("mouseout",function() {
+    profilePicture.style.cursor = "default";
+    awardBox.style.display = "none";
+})
+
