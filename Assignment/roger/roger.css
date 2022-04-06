@@ -12,6 +12,8 @@ body {
     line-height: 1.6;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    /* background-image: url(bckg.png);
+    background-size: repeat; */
 }
 
 /*=======================================================================================*/
@@ -28,67 +30,45 @@ body {
     margin-right: auto;
 }
 
-.pewdiepie {
+.roger {
     padding: 20px 0px 20px 0px;
     transition: 500ms ease;
 }
 
-.pewdiepie:hover {
+.roger:hover {
     transform: scale(1.05);
-    filter: drop-shadow(.25em .25em .5em grey);
-}
-.awardBox {
-    display: none;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0px 0px 50px 0px;
-    opacity: 0;
-    transition: opacity 1s linear;
-}
-
-.awardBox p {
-    text-align: center;
-    font-size: 1.25em;
-    padding: 10px 10px 10px 10px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    transition: all 500ms ease;
-}
-
-.award1 {
-    filter: drop-shadow(.25em .25em .25em #870009);
-}
-
-.award2 {
-    filter: drop-shadow(.25em .25em .25em grey);
+    filter: drop-shadow(.25em .25em .5em rgb(197, 145, 49));
+    cursor: pointer;
 }
 
 .title {
     text-align: center;
     font-size: 1.25rem;
     font-weight: lighter;
-    letter-spacing: 7px;
-    padding: 25px 0px 0px 0px;
+    letter-spacing: 5px;
+    padding: 30px 0px 0px 0px;
 }
 
 .name {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+    padding: 10px 0px 0px 0px;
 }
 
 .description {
     text-align: center;
-    font-size: 1.25rem;
-    letter-spacing: 3px;
+    font-size: 1.2rem;
+    letter-spacing: 2.7px;
+    padding: 10px 0px 0px 0px;
 }
 
 .social-media {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 0px 50px 30px;
+    padding: 50px 0px 0px 30px;
     display:flex;
     justify-content: space-between;
 }
@@ -101,6 +81,9 @@ body {
     transform: scale(1.1);
 }
 
+.youtube-vid {
+    padding: 50px 0px 50px 0px;
+}
 /*=======================================================================================*/
 /* Product Image Part */
 .gallery {
@@ -115,9 +98,30 @@ body {
     text-align: center;
     font-size: 1.25rem;
     letter-spacing: 4px;
+    padding: 20px 50px 40px 50px;
+}
+
+.story {
+    text-align: justify;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    line-height: 2em;
     padding: 0px 50px 50px 50px;
 }
 
+.story b {
+    color: rgb(240, 156, 0);
+}
+
+.roger-banner {
+    filter: drop-shadow(.7em .7em .7em rgba(255, 166, 0, 0.461));
+    transition: all 500ms ease;
+}
+
+.roger-banner:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
 
 /*=======================================================================================*/
 /* Product Card Part */
@@ -133,7 +137,7 @@ body {
     text-align: center;
     font-size: 1.25rem;
     letter-spacing: 4px;
-    padding: 0px 50px 50px 50px;
+    padding: 20px 50px 70px 50px;
 }
 
 .container2{
@@ -446,48 +450,14 @@ body {
 
 
 
-/* Tablet View */
+/* Mobile View */
 @media screen and (max-width:800px) {
     .container2{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 5% 10% 0% 25%;
+        padding: 5px 5px 100px 5px;
         position: relative;
         z-index: 100;
-    }
-
-    .product-card2 {
-        margin-top: 10%;
-    }
-}
-@media screen and (max-width:600px) {
-    .container2{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 5% 10% 0% 17%;
-        position: relative;
-        z-index: 100;
-    }
-
-    .product-card2 {
-        margin-top: 10%;
-    }
-}
-
-/* Phone View */
-@media screen and (max-width: 420px) {
-    .container2{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 5% 10% 0% 10%;
-        position: relative;
-        z-index: 100;
-    }
-
-    .product-card2 {
-        margin-top: 10%;
     }
 }

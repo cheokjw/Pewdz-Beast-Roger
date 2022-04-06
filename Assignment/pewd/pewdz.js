@@ -15,11 +15,13 @@ $(document).ready(function(){
 });
 
 var profilePicture = document.querySelector(".pewdiepie");
-var awardBox = document.querySelector("#awardBox");
+var awardBox = document.querySelector(".awardBox");
 //When hover the picture, the box will pop out
 profilePicture.addEventListener("mouseover",function() {
     profilePicture.style.cursor = "pointer";
-    awardBox.style.display = "block";
+    awardBox.style.display = "flex";
+    awardBox.style.opacity = "1";
+    awardBox.style.tansition = "opacity 1s linear";
 })
 //When hover out the picture, the box will hide
 profilePicture.addEventListener("mouseout",function() {
