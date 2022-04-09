@@ -167,7 +167,7 @@ body {
     width:100%;
     height: 35%;
     background-image: 
-    linear-gradient(to bottom right,#B30041,#D7008A);
+    linear-gradient(to bottom right,#ebc509,#FFDD3C);
 }
 
 .content-1 .arrow-left{
@@ -187,20 +187,17 @@ body {
     cursor: pointer;
     
 }
-.heart i.fa-heart{
-    color: #f00c0c;
-}
 .content-1 > .main-image > img{
-    width: 300px;
-    height: 122px;
+    width: 200px;
+    height: 200px;
     position: absolute;
-    top: 60%;
-    left: 7%;
+    top: 25%;
+    left: 22%;
     z-index: 100;
-    filter: drop-shadow(.5em .5em .7em #870009);
+    filter: drop-shadow(.4em .4em .7em #FD9346);
 }
 .content-2 {
-    height: 120px;
+    height: 140px;
 }
 .content-2 .sub-image{ 
     display: flex;
@@ -209,9 +206,9 @@ body {
 }
 
 .content-2 .sub-image img{
-    width: 35px;
-    height: 20px;
-    margin: 70px 7px 0px;
+    width: 30px;
+    height: 30px;
+    margin: 60px 7px 0px;
     padding: 10px;
     background: #fff;
     border-radius: 10px;
@@ -221,7 +218,7 @@ body {
     border: 1.5px solid #fff;
 }
 .content-2 .sub-image img:hover{
-    border: 1.5px solid #B30041;
+    border: 1.5px solid #FFDD3C;
 }
 .content-3{
     position: relative;
@@ -243,52 +240,52 @@ body {
     font-size: 20px;
     cursor: pointer;
     transition: all 0.5s;
-    color: #B30041;
+    color: #FFDD3C;
 }
 
 .paragraph p{
-    font-size: 11.5px;
-    color: #000;
+    font-size: 20px;
+    color: red;
     font-weight: 500;
 }
-.price{
+.roger_price1{
     display: flex;
-    margin: 30px 0 10px;
+    margin: 20px 0 10px;
 }
+
 .space{
     flex: 1;
 }
 
-.price {
-    display: flex;
-}
-
-.price span:nth-child(1){
+.roger_price1 span:nth-child(1){
     font-size: 20px;
-    font-weight: 400;
-    margin-top: 3px;
+    font-weight: 300;
+    margin-top: 15px;
     margin-right: 5px;
 }
-.price span{
-    font-size: 25px;
+
+.roger_price1 span{
+    margin-top: 13px;
+    font-size: 22px;
     font-weight: 600;
 }
-.price p {
-    font-size: 12px;
-    padding: 5px 5px 5px 5px;
-    align-self: flex-end;
+
+.roger_price1 p {
+    font-size: 13px;
+    margin-top: 22px;
+    margin-left: 7px;
 }
 
-.price a{
+.roger_price1 a{
     font-size: 12px;
     text-decoration: none;
     border:none;
     background-image: 
-    linear-gradient(to right,#B30041,#D7008A);
+    linear-gradient(to bottom right,#ebc509,#FFDD3C);
     color: #fff;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 30px 10px;
+    padding: 15px 15px;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -315,7 +312,7 @@ body {
     width:100%;
     height: 35%;
     background-image: 
-    linear-gradient(to bottom right,#B30041,#D7008A);
+    linear-gradient(to bottom right,#ebc509,#FFDD3C);
 }
 
 .content-1-2 .arrow-left{
@@ -341,17 +338,17 @@ body {
 }
 
 .content-1-2 > .main-image2 > img{
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 210px;
     position: absolute;
-    top: 40%;
-    left: 25%;
+    top: 25%;
+    left: 20%;
     z-index: 100;
-    filter: drop-shadow(.5em .5em .7em #870009);
+    filter: drop-shadow(.2em .2em .8em #fdd297);
 }
 
 .content-2-2 {
-    height: 120px;
+    height: 140px;
 }
 
 .content-2-2 .sub-image2{ 
@@ -374,7 +371,7 @@ body {
 }
 
 .content-2-2 .sub-image2 img:hover{
-    border: 1.5px solid #B30041;
+    border: 1.5px solid #FFDD3C;
 }
 
 .content-3-2{
@@ -393,71 +390,98 @@ body {
     color: #464444;
 }
 
-.ratings span{
-    display: inline-block;
-    text-align: center;
-    line-height: 26px;
-    font-size: 10px;
-    cursor: pointer;
-    transition: all 0.5s;
-    color: #fcba26;
-}
-
-.ratings span:nth-child(5){
-    color: #a7a7a3;
-}
-
 .paragraph p{
     font-size: 11.5px;
     color: #000;
     font-weight: 500;
 }
 
-.price{
+.roger_price{
     display: flex;
-    margin: 30px 0 10px;
+    margin: 20px 0 10px;
 }
 
 .space{
     flex: 1;
 }
 
-.price span:nth-child(1){
+.roger_price span:nth-child(1){
     font-size: 20px;
-    font-weight: 400;
-    margin-top: 3px;
+    font-weight: 300;
+    margin-top: 15px;
     margin-right: 5px;
 }
 
-.price span{
-    font-size: 25px;
+.roger_price span{
+    margin-top: 13px;
+    font-size: 22px;
     font-weight: 600;
 }
 
-.price a{
+.roger_price p {
+    font-size: 13px;
+    margin-top: 23px;
+    margin-left: 7px;
+}
+
+.roger_price a{
     font-size: 12px;
     text-decoration: none;
     border:none;
     background-image: 
-    linear-gradient(to right,#B30041,#D7008A);
+    linear-gradient(to bottom right,#ebc509,#FFDD3C);
     color: #fff;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 10px 30px;
+    padding: 15px 15px;
     border-radius: 15px;
     cursor: pointer;
 }
 
 
 
-/* Mobile View */
+/* Tablet View */
 @media screen and (max-width:800px) {
     .container2{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 5px 5px 100px 5px;
+        padding: 5% 10% 0% 25%;
         position: relative;
         z-index: 100;
+    }
+
+    .product-card2 {
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width:600px) {
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 5% 10% 0% 17%;
+        position: relative;
+        z-index: 100;
+    }
+
+    .product-card2 {
+        margin-top: 10%;
+    }
+}
+
+/* Phone View */
+@media screen and (max-width: 420px) {
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 5% 10% 0% 10%;
+        position: relative;
+        z-index: 100;
+    }
+
+    .product-card2 {
+        margin-top: 10%;
     }
 }

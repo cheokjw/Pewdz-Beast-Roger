@@ -12,6 +12,8 @@ body {
     line-height: 1.6;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    /* background-image: url(bckg.png);
+    background-size: repeat; */
 }
 
 /*=======================================================================================*/
@@ -28,67 +30,45 @@ body {
     margin-right: auto;
 }
 
-.pewdiepie {
+.beast{
     padding: 20px 0px 20px 0px;
     transition: 500ms ease;
 }
 
-.pewdiepie:hover {
+.beast:hover {
     transform: scale(1.05);
-    filter: drop-shadow(.25em .25em .5em #42005a);
-}
-.awardBox {
-    display: none;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0px 0px 50px 0px;
-    opacity: 0;
-    transition: opacity 1s linear;
-}
-
-.awardBox p {
-    text-align: center;
-    font-size: 1.25em;
-    padding: 10px 10px 10px 10px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    transition: all 500ms ease;
-}
-
-.award1 {
-    filter: drop-shadow(.25em .25em .25em #870009);
-}
-
-.award2 {
-    filter: drop-shadow(.25em .25em .25em grey);
+    filter: drop-shadow(.25em .25em .5em rgb(13, 21, 135));
+    cursor: pointer;
 }
 
 .title {
     text-align: center;
     font-size: 1.25rem;
     font-weight: lighter;
-    letter-spacing: 7px;
-    padding: 25px 0px 0px 0px;
+    letter-spacing: 5px;
+    padding: 30px 0px 0px 0px;
 }
 
 .name {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+    padding: 10px 0px 0px 0px;
 }
 
 .description {
     text-align: center;
-    font-size: 1.25rem;
-    letter-spacing: 3px;
+    font-size: 1.2rem;
+    letter-spacing: 2.7px;
+    padding: 10px 0px 0px 0px;
 }
 
 .social-media {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 0px 50px 30px;
+    padding: 50px 0px 0px 30px;
     display:flex;
     justify-content: space-between;
 }
@@ -101,23 +81,98 @@ body {
     transform: scale(1.1);
 }
 
+.youtube-vid {
+    padding: 50px 0px 50px 0px;
+}
 /*=======================================================================================*/
 /* Product Image Part */
 .gallery {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     padding: 50px 50px 0px 50px;
 }
 
 .g-description {
     text-align: center;
     font-size: 1.25rem;
+    letter-spacing: 3px;
+    padding: 20px 50px 40px 50px;
+}
+
+.story {
+    text-align: justify;
+    font-size: 1.25rem;
     letter-spacing: 4px;
+    line-height: 2em;
     padding: 0px 50px 50px 50px;
 }
 
+
+.youtube-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+.youtube-content p {
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 2em;
+
+}
+
+.achievements {
+    width: 100%;
+}
+
+.team {
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+}
+
+.tree-logo img{
+    margin-left: 10%;
+    filter: drop-shadow(.5em .5em .5em rgba(59, 100, 59, 0.2));
+    transition: all 500ms ease;
+}
+
+.tree-logo img:hover{
+    filter: drop-shadow(.5em .5em .5em rgba(59, 100, 59, 0.7));
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.tree-logo p {
+    text-align: justify;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    line-height: 1.7em;
+    padding: 50px 100px 0px 0px;
+}
+
+.team-seas img {
+    margin-left: 15%;
+    filter: drop-shadow(.5em .5em .5em rgba(64, 64, 127, 0.2));
+    transition: all 500ms ease;
+}
+
+.team-seas img:hover {
+    filter: drop-shadow(.5em .5em .5em rgba(64, 64, 127, 0.7));
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.team-seas p {
+    text-align: justify;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    line-height: 1.7em;
+    padding: 50px 100px 100px 50px;
+}
 
 /*=======================================================================================*/
 /* Product Card Part */
@@ -133,7 +188,7 @@ body {
     text-align: center;
     font-size: 1.25rem;
     letter-spacing: 4px;
-    padding: 0px 50px 50px 50px;
+    padding: 20px 50px 70px 50px;
 }
 
 .container2{
@@ -163,7 +218,7 @@ body {
     width:100%;
     height: 35%;
     background-image: 
-    linear-gradient(to bottom right,#B30041,#D7008A);
+    linear-gradient(to bottom right,#045de9,#09c6f9);
 }
 
 .content-1 .arrow-left{
@@ -183,20 +238,17 @@ body {
     cursor: pointer;
     
 }
-.heart i.fa-heart{
-    color: #f00c0c;
-}
 .content-1 > .main-image > img{
-    width: 300px;
-    height: 122px;
+    width: 180px;
+    height: 230px;
     position: absolute;
-    top: 60%;
-    left: 7%;
+    top: 25%;
+    left: 25%;
     z-index: 100;
-    filter: drop-shadow(.5em .5em .7em #870009);
+    filter: drop-shadow(.4em .4em .7em rgb(39, 39, 91));
 }
 .content-2 {
-    height: 120px;
+    height: 140px;
 }
 .content-2 .sub-image{ 
     display: flex;
@@ -205,9 +257,9 @@ body {
 }
 
 .content-2 .sub-image img{
-    width: 35px;
-    height: 20px;
-    margin: 70px 7px 0px;
+    width: 30px;
+    height: 35px;
+    margin: 60px 7px 0px;
     padding: 10px;
     background: #fff;
     border-radius: 10px;
@@ -217,7 +269,7 @@ body {
     border: 1.5px solid #fff;
 }
 .content-2 .sub-image img:hover{
-    border: 1.5px solid #B30041;
+    border: 1px solid blue;
 }
 .content-3{
     position: relative;
@@ -239,47 +291,48 @@ body {
     font-size: 20px;
     cursor: pointer;
     transition: all 0.5s;
-    color: #B30041;
+    color: rgb(55, 55, 255);
 }
 
 .paragraph p{
-    font-size: 11.5px;
-    color: #000;
+    font-size: 20px;
+    color: red;
     font-weight: 500;
 }
-.pewdz_price1{
+.beast_price1{
     display: flex;
-    margin: 15px 0 10px;
+    margin: 20px 0 10px;
 }
 
 .space{
     flex: 1;
 }
 
-.pewdz_price1 span:nth-child(1){
+.beast_price1 span:nth-child(1){
     font-size: 20px;
     font-weight: 300;
     margin-top: 15px;
-    margin-right: 6px;
+    margin-right: 5px;
 }
 
-.pewdz_price1 span{
+.beast_price1 span{
     margin-top: 13px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 }
 
-.pewdz_price1 p {
-    font-size: 11px;
-    margin-top: 30px;
-    margin-left: 5px;
+.beast_price1 p {
+    font-size: 13px;
+    margin-top: 22px;
+    margin-left: 7px;
 }
 
-.pewdz_price1 a{
+.beast_price1 a{
     font-size: 12px;
     text-decoration: none;
     border:none;
-    background-image: linear-gradient(to right,#B30041,#D7008A);
+    background-image: 
+    linear-gradient(to bottom right,#045de9,#09c6f9);
     color: #fff;
     font-weight: 500;
     letter-spacing: 1px;
@@ -287,7 +340,6 @@ body {
     border-radius: 15px;
     cursor: pointer;
 }
-
 
 
 /* Second Product */
@@ -311,7 +363,7 @@ body {
     width:100%;
     height: 35%;
     background-image: 
-    linear-gradient(to bottom right,#B30041,#D7008A);
+    linear-gradient(to bottom right,#045de9,#09c6f9);
 }
 
 .content-1-2 .arrow-left{
@@ -337,17 +389,17 @@ body {
 }
 
 .content-1-2 > .main-image2 > img{
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 160px;
     position: absolute;
     top: 40%;
-    left: 25%;
+    left: 27%;
     z-index: 100;
-    filter: drop-shadow(.5em .5em .7em #870009);
+    filter: drop-shadow(.2em .2em .8em #fdd297);
 }
 
 .content-2-2 {
-    height: 120px;
+    height: 140px;
 }
 
 .content-2-2 .sub-image2{ 
@@ -370,7 +422,7 @@ body {
 }
 
 .content-2-2 .sub-image2 img:hover{
-    border: 1.5px solid #B30041;
+    border: 1px solid blue;
 }
 
 .content-3-2{
@@ -389,59 +441,46 @@ body {
     color: #464444;
 }
 
-.ratings span{
-    display: inline-block;
-    text-align: center;
-    line-height: 26px;
-    font-size: 10px;
-    cursor: pointer;
-    transition: all 0.5s;
-    color: #fcba26;
-}
-
-.ratings span:nth-child(5){
-    color: #a7a7a3;
-}
-
 .paragraph p{
     font-size: 11.5px;
     color: #000;
     font-weight: 500;
 }
 
-.pewdz_price2{
+.beast_price{
     display: flex;
-    margin: 15px 0 10px;
+    margin: 20px 0 10px;
 }
 
 .space{
     flex: 1;
 }
 
-.pewdz_price2 span:nth-child(1){
+.beast_price span:nth-child(1){
     font-size: 20px;
     font-weight: 300;
     margin-top: 15px;
-    margin-right: 6px;
+    margin-right: 5px;
 }
 
-.pewdz_price2 span{
+.beast_price span{
     margin-top: 13px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 }
 
-.pewdz_price2 p {
-    font-size: 11px;
-    margin-top: 30px;
-    margin-left: 5px;
+.beast_price p {
+    font-size: 13px;
+    margin-top: 23px;
+    margin-left: 7px;
 }
 
-.pewdz_price2 a{
+.beast_price a{
     font-size: 12px;
     text-decoration: none;
     border:none;
-    background-image: linear-gradient(to right,#B30041,#D7008A);
+    background-image: 
+    linear-gradient(to bottom right,#045de9,#09c6f9);
     color: #fff;
     font-weight: 500;
     letter-spacing: 1px;
@@ -449,7 +488,6 @@ body {
     border-radius: 15px;
     cursor: pointer;
 }
-
 
 
 
