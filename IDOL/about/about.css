@@ -1,0 +1,258 @@
+body{
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+#about_title{
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+    font: normal 1.6em/2  sans-serif;
+    letter-spacing: 0.5em; 
+    border-bottom: 1.5px solid black;
+    width: 100%;
+}
+
+#about_txt{
+    padding: 20px 0px 0px 60px;
+    font: 1.3em/2 sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.about_caps{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.dropdown{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    float: right;
+    margin-top: 30px;
+}
+
+.dropdown ul li{
+    border-radius: 5px;
+    background-color: aquamarine;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    width: 100px;
+    transition: all 500ms ease;
+    margin-left: -30px;
+    margin-right: 30px;
+}
+
+.dropdown ul li span{
+    display: block;
+    padding: 0 30px;
+    color: black;
+    text-decoration: none;
+    line-height: 80px;
+    font-size: 1.3em;
+}
+
+.dropdown ul ul{
+    position: absolute;
+    display: none;
+    
+}
+
+.dropdown ul li:hover > ul {
+    display: block;
+}
+
+.dropdown ul ul li {
+    width: 190px;
+    margin-top: 30px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background: rgb(0,36,5);
+    
+}
+
+.dropdown ul ul li span{
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+
+
+.idoltxt{
+    font: bold 2.7em/2em sans-serif;
+    transition: all 500ms ease;
+    
+}
+
+.idoltxt:hover {
+    background-color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#des_list{
+    margin-top: 250px;
+    padding: 0px 50px 0px 50px;
+    font: 1.3em/1.8em sans-serif;
+    clear: left;
+}
+
+#des_list dt{
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+    font-weight: 700;
+}
+
+.des_caps{
+    font-weight: bold;
+    font-size: 1.6em;
+    color: rgb(77, 165, 165);
+}
+
+#des_list dd{
+    margin: 0px 0px 30px 70px;;
+    /* padding: 0px 0px 30px 70px; */
+    font-size: 1.0em;
+    letter-spacing: 2px;
+    
+}
+
+.des_txt{
+    border-left: 20px solid rgba(77, 165, 165, 0.334);
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.des{
+    padding: 0px 20px 100px;
+}
+
+.contact{
+    border: 1.5px solid white;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: 1.3px;
+    padding-top: 50px;
+    /* padding: 90px 90px 70px; */
+    background: #ADEFD1FF;
+    color: white;
+}
+
+.contact_txt1{
+    color: black;
+    display: block;
+    padding: 5px 100px 5px 100px;
+    text-align: justify;
+}
+
+.contact_txt2{
+    padding: 10px 0px 40px 0px;
+}
+
+.contact h1{
+    font: bold 2em/2em sans-serif;
+    color: black;
+    padding-bottom: 0px;
+}
+
+.contact p{
+    font: 1.3em/1.7em sans-serif;
+    
+}
+
+.contact h2{
+    font: bold 1.6em/2em sans-serif;
+    
+}
+
+.contact img{
+    padding-top: 20px;
+}
+
+.contact_txt3{
+    padding-bottom: 30px;
+}
+
+.contact_txt3 i{
+    color: white;
+    font-size: 1.5em;
+    padding: 0px 10px 0px 10px;
+    transition: all 500ms ease;
+}
+
+.contact_txt3 i:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(.2em .2em .2em grey);
+    cursor: pointer;
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 500px 
+   ===============================
+*/
+@media only screen and (max-width: 380px) {
+
+
+   .contact_txt2 img{
+       width: 200px;
+   }
+
+    
+} 
+
+@media only screen and (max-width: 550px) {
+
+    #des_list dd{
+        margin: 0px 0px 30px 0px;;
+
+        
+    }
+
+    .dropdown{
+        visibility: hidden;
+    }
+
+    .des{
+        position: relative;
+        top: -200px;
+    }
+
+    .contact{
+        position: relative;
+        top: -250px;
+    }
+
+    .footer{
+        position: relative;
+        top: -250px;
+    }
+
+ } 
+
+
+/* =============================================
+    Tablet Styles: 481px to 769px
+    =============================================
+ */
+ @media only screen and (min-width: 550px) {
+
+    #des_list dd{
+        margin: 0px 0px 30px 70px;
+    }
+
+ } 
+
+ @media only screen and (max-width: 550px) {
+
+    .dropdown{
+        visibility: hidden;
+    }
+
+ } 

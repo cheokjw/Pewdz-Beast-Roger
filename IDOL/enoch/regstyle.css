@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*background: url(pic2.png);
+    background-position: center;
+    background-size:cover;*/
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+
+.title h1{
+    margin: 0;
+    padding: 0px 50px 0px 0px;
+    color: #030304d7;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+
+.container{
+    width: 100%;
+    padding: 100px 0px 50px 0px;
+}
+
+.right{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+   
+}
+
+.formBox{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px 0px 100px;
+    box-sizing: border-box;
+    background: rgba(249, 247, 247, 0.4);
+    border-radius: 5px;
+}
+
+.formBox p{
+    margin:0;
+    padding: 20px 0px 30px 0px;
+    font-weight: bold;
+    color: #0c0f1ede;
+    font-size: 1.4em;
+}
+
+.address-input {
+    display:flex;
+    flex-direction: row;
+}
+
+.postal-code, .state, .country{
+    width: 33%;
+}
+
+.button {
+    display:flex;
+    justify-content: space-evenly;
+    padding: 70px 0px 0px 0px;
+    width:80%;
+}
+
+.formBox input[type="text"], .formBox input[type="Password"]{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #070707a0;
+    background: rgba(247, 247, 247, 0.232);
+    outline: none;
+}
+
+.formBox input[type="date"]{
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid #de9d25;
+    outline: none;
+    background: rgba(247, 247, 247, 0.2);
+}
+
+.formBox input[type="text"]:focus, .formBox input[type="Password"]:focus{
+    border-bottom: 2px solid #262626;
+}
+
+textarea{
+    font-family: sans-serif;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #070707a0;
+    background: rgba(247, 247, 247, 0.232);
+    outline: none;
+}
+
+
+#showpassw{
+    font-size: 13px;
+    color: #3a3838;
+}
+
+.formBox input[type="checkbox"]{
+    width: auto;
+    vertical-align: baseline;
+}
+.formBox #signupbtn{
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    color: black;
+    background: #8bf6d0;
+    transition: all 500ms ease;
+   }
+
+.formBox #backbtn, .formBox #resetbtn{
+    margin: 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    width: 100px;
+    height: 45px;
+    color: black;
+    background: #8bf6d0;
+    transition: all 500ms ease;
+   }
+
+.formBox #signupbtn:hover{
+    background: black;
+    color: whitesmoke;
+    transform: scale(1.05);
+    filter: drop-shadow(.1em .1em .5em grey);
+    cursor: pointer;
+}
+
+.formBox #backbtn:hover{
+    background: black;
+    color: whitesmoke;
+    transform: scale(1.05);
+    filter: drop-shadow(.1em .1em .5em grey);
+    cursor: pointer;
+}
+
+.formBox #resetbtn:hover{
+    background: black;
+    color: whitesmoke;
+    transform: scale(1.05);
+    filter: drop-shadow(.1em .1em .5em grey);
+    cursor: pointer;
+}
+
+
+span{
+    display: block;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: red;
+    font-style: italic;
+}

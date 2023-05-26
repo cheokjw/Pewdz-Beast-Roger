@@ -1,0 +1,217 @@
+/* ===============================
+   Mobile Styles: 0px to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+    .profileBox {
+        padding: 0;
+    }
+    
+    .profileBox h1{
+        padding: 50px 5px 0px;
+        font-size: 1.6em;
+    }
+
+    .profileBox p{
+        font-size: 1em;
+    }
+    
+    .profile_txt1{
+        text-align: center;
+    }
+    .profile_txt2{
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    .addressBox{
+        position: relative;
+        top: -190px;
+    }
+
+    .containerA{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .left{
+
+        width: 90%;
+    }
+
+    .right{
+
+        width: 50%;
+    }
+
+   
+
+    
+} 
+
+/* =============================================
+    Tablet Styles: 481px to 769px
+    =============================================
+ */
+ @media only screen and (max-width: 760px) {
+
+
+    .profileBox  {
+        padding: 0;
+        font-size: 0.8em;
+        width: 100%;
+    }
+
+    .profileBox h1{
+        margin: 0;
+        width: auto;
+        max-width: 400px;
+        padding: 100px 50px 0px;
+        font-size: 2em;
+    }
+
+    .profileBox p{
+        font-size: 1.5em;
+        padding: 10px 50px 0px;
+    }
+
+    #uname{
+        font-size: 0.8em;
+    }
+    
+
+    .containerA{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 140px auto 120px;
+        padding: 0 auto;
+        width: 90%;
+
+    }
+
+    .left{
+        margin: 0;
+        padding: 50px auto 30px;
+        order: 2;
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;    
+    }
+
+    .right{
+
+        width: 100%;
+        order: 1;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding: 0px 30px 10px;
+    }
+
+    .addressBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+
+    }
+    
+    .left_col{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .right-col{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .right-col img{
+        width: 60px;
+    }
+
+
+    .addressBox{
+        top: -100px;
+
+    }
+
+ } 
+
+/* =============================================
+    Desktop Styles: 769px or above
+    =============================================
+ */
+@media only screen and (min-width: 769px) {
+    .containerA{
+        display: flex;
+        width: 90%;
+        margin: 0px auto;
+        height: 430px;
+        justify-content: space-around;
+    }
+    
+    
+    
+    .right{
+        width: 50%;
+        position: relative;
+        top: -150px;
+        border-radius: 15px;
+        
+    }
+    
+    .containerA h2{
+        font-size: 1.3em;
+        padding-bottom: 20px;
+        
+    }
+    
+    .containerA p{
+        font-size: 1.2em;
+        line-height: 2.3em;
+    }
+    
+    .main_avatar{
+        position: relative;
+        top: -70px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #uname3{
+        text-align: center;
+        position: relative;
+        top: -50px;
+        font-size: 1.3em;
+        letter-spacing: 3px;
+    }
+    
+    .right p{
+        font-size: 1em;
+        position: relative;
+        top: -10px;
+        left: 20px;
+        letter-spacing: 3px;
+    }
+    
+    
+}
+
+
+
+ 
+
+
+
+
+ 
+
+ 

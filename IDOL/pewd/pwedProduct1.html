@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pewdiepie Product Page</title>
+        <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+        <!-- CSS file links -->
+        <link href="../reset.css" rel="stylesheet"/>
+        <link href="pewdz.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="product2.css">
+        <link rel="stylesheet" href="../boo_jk/cartDisplay.css" >
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <a href="../tiff/index.html"  class="logo"><img src="logo-removebg-preview.png" width="80px"></a>
+        <div class="navigation">
+          <ul class="menu">
+            <div class="close-btn"></div>
+            <li class="menu-item"><a href="../tiff/index.html" >Home</a></li>
+            <li class="menu-item">
+              <a class="sub-btn" href="#">Celebrities</a>
+              <ul class="sub-menu">
+                <li class="sub-item"><a href="../pewd/pewdz.html">Pewdiepie</a></li>
+                <li class="sub-item"><a href="../roger/roger.html">Uncle Roger</a></li>
+                <li class="sub-item"><a href="../beast/beast.html">Mr Beast</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="sub-btn" href="#">Account</a>
+              <ul class="sub-menu">
+                <li class="sub-item"><a href="../profile/profile.html">Profile</a></li>
+                <li class="sub-item"><a onclick="logout()" href="../enoch/loginpg.html">Log In</a></li>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="../about/about.html">About</a></li>
+            <li class="menu-item"><a href="../boo_jk/faq.html">FAQ</a></li>
+            <li class="menu-item"><i class='bx bx-cart' id="cart-icon"></i></li>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <a href="../boo_jk/checkout.html"><button type="button" class="btn-buy">Check Out</button></a>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+          </ul>
+        </div>
+        <div class="menu-btn"></div>
+    </header>
+
+    <!--Content-->
+    <div class="pcontainer">
+        <div class="container-img">
+            <img class="product-img" src="product1_face.png" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="product1_front.png" width="100%"   class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="product1_back.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="product1_face.png" width="100%"   class="small-img" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pcontainer-product">
+            <h6>Home/ Pewdiepie/ Keyboard</h6>
+            <h3 class="product-title" id="product-title">Pewdiepie K1 Pro</h3>
+            <h4>RM</h4>
+            <h3 class="price">447.99</h3>
+            <br>
+            <div class="addToCart1">
+                <span><i id="cart" class="fas fa-shopping-cart add-cart"></i></span>
+            </div>
+            <h4 class="pdes">Product Description</h4>
+            <span><p>Ghost has collaborated with PewDiePie to give you the most epic keyboard and mouse on the market. Whether you`re a floor gang member or a serious epic gamer, elevate your gaming with the new PewDiePie Keyboard and Mouse.</p>                       
+            <p class="product-desc"><b>Type:</b> K1 Pro, K1 Pro + M1</p>
+            <p><b>Switch:</b> Gateron Red</p></span>
+        </div>
+        <br>
+    </div>
+    
+    <!-- Related Product --> 
+    <div id="featured" class="rpcontainer">
+        <div class="rproducth mt-5 py-5">
+            <h3>Related Products</h3>
+            <hr>
+        </div>
+
+        <div class="rpitemlist">
+            <div class="rpitem">
+                <div class="rogerp2">
+                <img class="img-fluid" src="shirt2white.png" alt="">
+                </div>
+                <h5 class="rpname">King Of Flavour</h5>
+                <h4 class="rpprice">$49.99</h4>
+                <a href="../roger/UncleRogerWhite.html"><button class="buy-btn">More Details</button></a>
+            </div>
+
+            <div class="rpitem">
+                <div class="beastp2">
+                <img class="img-fluid" src="mrbblue.jpg" alt="">
+                </div>
+                <h5 class="rpname">Paneled Mineral Wash Long Sleeve</h5>
+                <h4 class="rpprice">$159.99</h4>
+                <a href="../beast/beastProduct1.html"><button class="buy-btn">More Details</button></a>
+            </div>
+
+            <div class="rpitem">
+                <div class="beastp1">
+                <img class="img-fluid" src="mrbyellow.jpg" alt="">
+                </div>
+                <h5 class="rpname">Youth 'Frosted Beast' Hoodie</h5>
+                <h4 class="rpprice">$65.00</h4>
+                <a href="../beast/beastProduct2.html"><button class="buy-btn">More Details</button></a>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                  <li><a href="../boo_jk/faq.html">FAQ</a></li>
+                  <li><a href="../boo_jk/delivery.html">order & delivery</a></li>
+                  <li><a href="../boo_jk/exchange.html">returns & exchange</a></li>
+                  <li><a href="../boo_jk/security.html">payment & security</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="../about/about.html">about us</a></li>
+                      <li><a href="../boo_jk/Interview.html">Survey</a></li>
+                  </ul>
+              </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="../pewd/pewdz.html">pewdiepie</a></li>
+                        <li><a href="../beast/beast.html">mr beast</a></li>
+                        <li><a href="../roger/roger.html">uncle roger</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100080594940743"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/idol_RDS1S2G1"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/idol_rds1s2g1"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/cheok-jia-wei-445a29201/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="../boo_jk/cart.js" type="text/javascript"></script>
+    <!--Change Img JS Function-->
+    <script>
+        var MainImg = document.getElementById('MainImg');
+        var smallimg = document.getElementsByClassName('small-img');
+
+        smallimg[0].onclick = function() {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function() {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function() {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function() {
+            MainImg.src = smallimg[3].src;
+        }
+        smallimg[4].onclick = function() {
+            MainImg.src = smallimg[4].src;
+        }
+    </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+        <script src="header.js" type="text/javascript"></script>
+        <script src="../enoch/signLS.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Beast</title>
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <!-- CSS file links -->
+    <link href="../reset.css" rel="stylesheet"/>
+    <link href="beast.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="../boo_jk/cartDisplay.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="../tiff/index.html"  class="logo"><img src="logo-removebg-preview.png" width="80px"></a>
+        <div class="navigation">
+            <ul class="menu">
+            <div class="close-btn"></div>
+            <li class="menu-item"><a href="../tiff/index.html" >Home</a></li>
+            <li class="menu-item">
+                <a class="sub-btn" href="#">Celebrities</a>
+                <ul class="sub-menu">
+                <li class="sub-item"><a href="../pewd/pewdz.html">Pewdiepie</a></li>
+                <li class="sub-item"><a href="../roger/roger.html">Uncle Roger</a></li>
+                <li class="sub-item"><a href="../beast/beast.html">Mr Beast</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a class="sub-btn" href="#">Account</a>
+                <ul class="sub-menu">
+                <li class="sub-item"><a href="../profile/profile.html">Profile</a></li>
+                <li class="sub-item"><a onclick="logout()" href="../enoch/loginpg.html">Log In</a></li>
+                </li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="../about/about.html">About</a></li>
+            <li class="menu-item"><a href="../boo_jk/faq.html">FAQ</a></li>
+            <li class="menu-item"><i class='bx bx-cart' id="cart-icon"></i></li>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <a href="../boo_jk/checkout.html"><button type="button" class="btn-buy">Check Out</button></a>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+            </ul>
+        </div>
+        <div class="menu-btn"></div>
+    </header>
+
+    <!-- Introduction Part -->
+    <div class="container">
+        <img src="beast-modified.png" class="beast" alt="beast" height="340" width="340"/>
+        <p class="title">RICH, RICHER, AND RICHEST</p>
+        <p class="name">MR BEAST</p>
+        <p class="description">Money? Let's Just Give It Away To Everyone!</p>
+    </div>
+    <div class="social-media">
+        <a href="https://www.instagram.com/mrnigelng/"><img src="Instagram_logo_2016.svg.png" alt="instagram" height="50" width="50"/></a>
+        <a href="https://www.youtube.com/c/mrnigelng"><img src="Youtube_full-color_icon_(2017).svg.png" alt="youtube" height="55" width="55"/></a>
+        <a href="https://twitter.com/MrNigelNg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor "><img src="twitter.png" alt="twitter" height="60" width="60"/></a>
+    </div>
+
+    <div class="youtube-vid">
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/0e3GPea1Tyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- End Of Introduction Part -->
+
+    <!-- Product Image Part -->
+    <div class="product-gallery">
+        <hr/>
+        <p class="gallery">How is he so successful?</p>
+        <p class="g-description"><u>The story of Jimmy Donaldson a.k.a Mr Beast </u></p>
+        <p class="story"><img src="youtube_thumbnail1.png" width="100%"/><br><br>In January 2017, Donaldson published an almost day-long video of himself counting to 100,000. The stunt took him 40 hours, with some parts sped up to "keep it under 24 hours. He continues to attract audience and increase his own subscribe counts by posting reckless and unimaginable content such as the videos listed down below.
+        </p>
+        <div class="youtube-content">
+            <iframe width="45%" height="250" src="https://www.youtube.com/embed/LnlKwzc_TNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="45%" height="250" src="https://www.youtube.com/embed/00NgUctWoLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="story" style="padding-top: 20px; text-align: right;"><b>And many more.....</b></p>
+        <hr/>
+    </div>
+    <!--  End Product Image Part -->
+
+    <!-- Extra Project Part -->
+    <div class="achievements">
+        <p class="gallery">Achievements</p>
+        <div class="team">
+            <div class="tree-logo">
+                <img src="Team_Trees-Logo.wine.png" width="250px"> 
+                <p class="story">Team Trees, stylized as <b style="color: green;">#TEAMTREES</b>, is a collaborative fundraiser that raised 20 million U.S. dollars before the start of 2020 to plant 20 million trees</p> 
+            </div>
+            <div class="team-seas">
+                <img src="teamseas-logo.png" width="250px">
+                <p class="story">Team Seas, stylized as <b style="color: rgb(0, 0, 131);">#TeamSeas</b>, is an international collaborative fundraiser that was started by MrBeast and Mark Rober. The fundraiser succeeded in raising over 30 million U.S. dollars.</p>
+            </div>
+        </div>  
+        <hr>
+    </div>
+    <!-- End Of Extra Project Part -->
+
+    <!--  Product Card Part -->
+    <div class="product-list">
+        <p class="product">The Products</p>
+        <p class="p-description">Featured Products</p>
+        <div class="container2">
+            <!-- First Product -->
+            <div class="product-card1">
+                <div class="content-1">
+                    <div class="main-image">
+                        <img id="product1" src="beast-product1-removebg-preview.png" alt="" class="product-img">
+                    </div>
+                </div>    
+                <div class="content-2">
+                    <div class="sub-image">
+                        <a><img onclick="change(this)" src="beast-product1-removebg-preview.png" alt=""></a>
+                        <a><img onclick="change(this)" src="beast-product1-2-removebg-preview.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="content-3">
+                    <div class="branding">
+                        <span class="product-title" id="product-title">Paneled Mineral Wash Long Sleeve</span>
+                        <h4>MR.BEAST</h4>
+                    </div>
+                    <div class="addToCart">
+                        <span><i class="fas fa-shopping-cart add-cart"></i></span>
+                    </div>
+                    <div class="paragraph">
+                        <p>
+                            • Full Printed on a navy mineral wash long sleeve tee<br>
+                            • Printed with soft hand inks so print is soft to the touch<br>
+                            • Front and right sleeve decorations
+                        </p>
+                    </div>
+                    <div class="beast_price1">
+                        <span>RM</span>
+                        <span class="price" id="price">109.60</span>
+                        <p><s>RM 159.99</s></p>
+                        <div class="space"></div>
+                        <a href="beastProduct1.html">MORE DETAILS</a>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Second Product -->
+            <div class="product-card2">
+                <div class="content-1-2">
+                    <div class="main-image2">
+                        <img id="product2" src="beast-product2-removebg-preview.png" alt="" class="product-img">
+                    </div>
+                </div>
+                <div class="content-2-2">
+                    <div class="sub-image2">
+                        <a><img onclick="change2(this)" src="beast-product2-removebg-preview.png" alt=""></a>
+                        <a><img onclick="change2(this)" src="beast-product2-2-removebg-preview.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="content-3-2">
+                    <div class="branding">
+                        <span  class="product-title">Youth "Frosted Beast" Hoodie</span>
+                        <br><br>
+                        <h4>MR.BEAST</h4>
+                    </div>
+                    <div class="addToCart">
+                        <span><i class="fas fa-shopping-cart add-cart"></i></span>
+                    </div>
+                    <div class="paragraph">
+                        <p>• Gold, 50% cotton, 50% polyester youth hoodie<br>
+                            • Printed with high quality puff ink<br>
+                            • Custom printed neck/size tag<br>
+                        </p>
+                    </div>
+                    <div class="beast_price">
+                        <span>RM</span>
+                        <span class="price">170.60</span>
+                        <p><s>RM 220.99</s></p>
+                        <div class="space"></div>
+                        <a href="beastProduct2.html">MORE DETAILS</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- End of Product Card Part-->
+
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                  <li><a href="../boo_jk/faq.html">FAQ</a></li>
+                  <li><a href="../boo_jk/delivery.html">order & delivery</a></li>
+                  <li><a href="../boo_jk/exchange.html">returns & exchange</a></li>
+                  <li><a href="../boo_jk/security.html">payment & security</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="../about/about.html">about us</a></li>
+                      <li><a href="../boo_jk/Interview.html">Survey</a></li>
+                  </ul>
+              </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="../pewd/pewdz.html">pewdiepie</a></li>
+                        <li><a href="../beast/beast.html">mr beast</a></li>
+                        <li><a href="../roger/roger.html">uncle roger</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100080594940743"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/idol_RDS1S2G1"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/idol_rds1s2g1"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/cheok-jia-wei-445a29201/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    <script src="beast.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="header.js" type="text/javascript"></script>
+    <script src="../boo_jk/cart.js" type="text/javascript"></script>
+    <script src="../enoch/signLS.js" type="text/javascript"></script>
+</body>
+</html>

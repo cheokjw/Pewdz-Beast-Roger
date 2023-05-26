@@ -1,0 +1,373 @@
+body{
+    background-color: white;
+    max-width: 1000px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logout {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5em;
+    transition: all 500ms ease;
+    padding: 30px 70px 0px;
+}
+
+#logout:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0em 0em .25em rgb(141, 140, 135));
+}
+
+
+
+.profileBox{
+    background: linear-gradient(to bottom, aquamarine, aquamarine);
+    width: 100%;
+    height: 480px;
+    
+}
+
+.profile_txt1{
+    font-weight: light;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px 70px 0px;
+    letter-spacing: 5px;
+}
+
+.profileBox h1{
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 2em;
+    padding-top: 90px;
+    padding-left: 70px;
+    letter-spacing: 6px;
+}
+
+.profile_txt2{
+    font-size: 1.3em;
+    padding-left: 70px;
+    letter-spacing: 3px;
+}
+
+.containerA{
+    display: flex;
+    width: 100%;
+    height: 370px;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.left{
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    flex-direction: column;
+    background-color: #3a3a3c;
+    position: relative;
+    top: -150px;
+    border-radius: 15px;
+    padding: 30px 30px 30px 30px;
+    letter-spacing: 1px;
+    margin-right: 80px;
+}
+
+.left h2{
+    font-weight: 1000;
+    
+}
+
+.left h2, .left p{
+    letter-spacing: 3px;
+}
+
+.right{
+    background-color: #3a3a3c;
+    width: 50%;
+    position: relative;
+    top: -150px;
+    border-radius: 15px;
+    padding: 0px 30px 0px 30px;
+}
+
+.containerA h2{
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    
+}
+
+.containerA p{
+    font-size: 1.2em;
+    line-height: 2.3em;
+}
+
+.main_avatar{
+    position: relative;
+    top: -70px;
+    display: flex;
+    justify-content: center;
+}
+
+#uname3{
+    text-align: center;
+    position: relative;
+    top: -50px;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding: 0px 30px;
+}
+
+.right p{
+    font-size: 1em;
+    position: relative;
+    top: -10px;
+    left: 20px;
+    letter-spacing: 3px;
+}
+
+#avatars{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.avatar{
+    cursor: pointer;
+}
+
+
+.avatar:hover{
+    filter: drop-shadow(0 0 0.5em rgb(141, 140, 135));
+}
+
+
+
+.addressBox{
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 70px;
+    height: auto;
+    margin: 30px;
+    border: 5px dashed rgb(95, 87, 87);
+    outline: 10px solid rgb(171, 220, 213);
+    position: relative;
+    top: -100px;
+}
+
+.addressBox h2{
+    line-height: 2em;
+    font-size: 1.5em;
+    padding-bottom: 25px;
+    letter-spacing: 3px;
+}
+
+.addressBox p{
+    font-size: 1.2em;
+    line-height: 1.7em;
+    letter-spacing: 4px;
+}
+
+#editAddress{
+    line-height: 3em;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.left-col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.right-col{
+    width: 50%;
+    padding-top: 70px;
+}
+
+.right-col img {
+    margin-left: 45%;
+}
+
+
+/* popup form */
+
+.wrapper{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    z-index: 999;
+}
+
+.wrapper button{
+    border: 0;
+    padding: 12px 20px;
+    background: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.wrapper button.main_btn{
+    padding: 0px 30px;
+    line-height: 0em;
+    font-size: 1.2em;
+}
+
+
+.wrapper button.update_btn {
+    color: black;
+    background: #8bf6d0;
+    transition: all 500ms ease;
+    
+}
+
+.wrapper button.update_btn:hover{
+    background:black;
+    color: whitesmoke;
+    transform: scale(1.05);
+    filter: drop-shadow(.1em .1em .5em grey);
+    cursor: pointer;
+}
+
+.wrapper button.cancel_btn {
+    margin-right: 10px;
+    color: black;
+    background: rgb(215, 233, 231);
+    transition: all 500ms ease;
+}
+
+.wrapper button.cancel_btn:hover {
+    background:black;
+    color: whitesmoke;
+    transform: scale(1.05);
+    filter: drop-shadow(.1em .1em .5em grey);
+    cursor: pointer;
+}
+
+
+
+/*fixed pop up form to window tab*/
+.address_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden; /*hide popup form from webpage*/
+    transition: all 0.2s ease;
+} 
+
+/*make shadow on whole screen*/
+.address_wrap .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1; /*later chnage back*/
+    transition: all 0.5s ease;
+}
+
+.address_wrap .address{
+    width: 450px;
+    height: 550px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*align the pop up form to center*/
+    transform: translate(-50%, -50%);
+    /*make popup form bckg to white*/
+    background: white;
+    border-radius: 3px;
+}
+
+.wrapper.active .address_wrap{
+    visibility: visible;
+    transition: all 0.5s ease;
+}   
+
+/*when press "edit address", shadow will appear on webpages*/
+.wrapper.active .address_wrap .shadow{
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.address_wrap .address .header{
+    background: rgb(130, 248, 209);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: relative;
+    padding: 20px;
+}
+
+.address_wrap .address .header div{
+    color: rgb(45, 89, 74);
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.address_wrap .address .header .icon{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 28px;
+    color: rgb(132, 158, 154);
+}
+
+.address_wrap .address .header .icon:hover{
+    color: rgb(39, 75, 63);
+}
+
+.address_wrap .address .containerB{
+    padding: 25px;
+}
+
+.address_wrap .address .containerB .cont_body,
+.address_wrap .address .containerB .cont_body div{
+    margin-bottom: 30px;
+}
+
+.address_wrap .address .containerB .cont_foot{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.address_wrap .address .cont_body div label{
+    font-weight: 700;
+    color: rgb(31, 60, 50);
+    margin-bottom: 10px;
+}
+
+
+.address_wrap .address .cont_body div .update_info{
+    box-sizing: border-box;
+    border: 0.5px solid lightgrey;
+    padding: 12px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+
+.address_wrap .address .cont_body div .update_info:focus{
+    border-color: rgb(81, 171, 141);
+}
+
+input.update_info:focus:valid{
+    background: rgba(130, 248, 209, 0.455)  url(photo/form_tick.png) bottom right/contain no-repeat;
+}

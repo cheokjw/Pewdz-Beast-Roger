@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Register Form</title>
+        <link href="../reset.css" rel="stylesheet">
+        <link href="regstyle.css" rel="stylesheet">
+        <script type="text/javascript" src="signLS.js" defer></script>
+        <link href="header.css" rel="stylesheet">
+        <link href="footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="../boo_jk/cartDisplay.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+
+    <body onload="clearsess()">
+        <header>
+            <a href="../tiff/index.html"  class="logo"><img src="logo-removebg-preview.png" width="80px"></a>
+            <div class="navigation">
+              <ul class="menu">
+                <div class="close-btn"></div>
+                <li class="menu-item"><a href="../tiff/index.html" >Home</a></li>
+                <li class="menu-item">
+                  <a class="sub-btn" href="#">Celebrities</a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="../pewd/pewdz.html">Pewdiepie</a></li>
+                    <li class="sub-item"><a href="../roger/roger.html">Uncle Roger</a></li>
+                    <li class="sub-item"><a href="../beast/beast.html">Mr Beast</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="sub-btn" href="#">Account</a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="../profile/profile.html">Profile</a></li>
+                    <li class="sub-item"><a onclick="logout()" href="../enoch/loginpg.html">Log In</a></li>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="../about/about.html">About</a></li>
+                <li class="menu-item"><a href="../boo_jk/faq.html">FAQ</a></li>
+                <li class="menu-item"><i class='bx bx-cart' id="cart-icon"></i></li>
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content">
+                    
+                    </div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <a href="../boo_jk/checkout.html"><button type="button" class="btn-buy">Check Out</button></a>
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+              </ul>
+            </div>
+            <div class="menu-btn"></div>
+        </header>
+
+        <div class="container">
+            <div class="title">
+            <h1 style="text-align: center;">Register Form</h1>
+            </div>
+            <div class="right">
+                <div class="formBox">
+                    <form name="registerform" id="registerform" action="loginpg.html" method="get" >
+                        <div class="form">
+                            <!--UserInfo-->
+                            <p>Full Name</p>
+                            <input type="text" id="name" name="nameinput" placeholder="Enter Full Name" onkeydown="limitnamechar()" maxlength="20">
+                            <span id="namealert"></span>
+
+                            <p>Email</p>
+                            <input type="text" id="newemail" name="reginput" placeholder="Enter Email" onblur="checknewemail()" onkeydown="limitemailchar()" maxlength="30">
+                            <span id="newemailalert"></span>
+
+                            <p>Password</p>
+                            <input type="Password" id="newpassword" name="reginput" placeholder="Enter Password" >
+                            <span id="newpasswalert"></span>
+
+                            <p>Confirm Password</p>
+                            <input type="Password"
+                            id="c.password" name="reginput" placeholder="Enter Confirm Password" onblur="checkpw()">
+                            <span id="confirmpw"></span>
+                            
+                            <div class="act-address">
+                                <p>Address</p>
+                                <textarea type="text" id="address" name="reginput" placeholder="Enter Unit/House Number, Building, Street Name"></textarea>
+                                <span id="addressalert"></span>
+                            </div>
+
+                            <div class="adress-input">
+
+                                <div class="postal-code">
+                                    <p>Postal Code</p>
+                                    <input type="text" id="postcode" name="reginput" placeholder="Enter Postal Code">
+                                    <span id="postcodealert"></span>
+                                </div>
+
+                                <div class="state">
+                                    <p>State</p>
+                                    <input type="text" id="state" name="reginput" placeholder="Enter State">
+                                    <span id="statealert"></span>
+                                </div>
+
+                                <div class="country">
+                                    <p>Country</p>
+                                    <input type="text" id="country" name="reginput" placeholder="Enter Country">
+                                    <span id="countryalert"></span>
+                                </div>
+                            </div>
+
+                            <p>Date of Birth</p>
+                            <input type="date" id="dob" name="reginput">
+                            <span id="dobalert"></span>
+                        </div>
+                        
+
+                        <!-- Button -->
+                        <div class="button">
+                            <div class="back">
+                                <button id="backbtn" type="button" onclick="window.location.href='loginpg.html'">Back</button>
+                            </div>
+                            <div class="create">
+                                <button id="signupbtn" type="button" onclick="registerfn()">Create Account</button>
+                            </div>
+                            <div class="reset-btn">
+                                <button id="resetbtn" type="reset">Clear</button>
+                            </div>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <hr>
+            <div class="container">
+                <div class="row">
+                  <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                      <li><a href="../boo_jk/faq.html">FAQ</a></li>
+                      <li><a href="../boo_jk/delivery.html">order & delivery</a></li>
+                      <li><a href="../boo_jk/exchange.html">returns & exchange</a></li>
+                      <li><a href="../boo_jk/security.html">payment & security</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h4>company</h4>
+                      <ul>
+                          <li><a href="../about/about.html">about us</a></li>
+                          <li><a href="../boo_jk/Interview.html">Survey</a></li>
+                      </ul>
+                  </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="../pewd/pewdz.html">pewdiepie</a></li>
+                            <li><a href="../beast/beast.html">mr beast</a></li>
+                            <li><a href="../roger/roger.html">uncle roger</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100080594940743"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/idol_RDS1S2G1"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/idol_rds1s2g1"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/cheok-jia-wei-445a29201/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+        <script type="text/javascript" src="signLS.js" defer></script>
+        <script href="header.js"></script>
+        <script src="../boo_jk/cart.js" type="text/javascript"></script>
+        <script src="../boo_jk/saveCart.js" type="text/javascript"></script>
+    </body>
+
+</html>
+
+<!-- 
+<p>State</p>
+                                    <select name="states">
+                                        <option value="Johor">Johor</option>
+                                        <option value="Kedah">Kedah</option>
+                                        <option value="Kelantan">Kelantan</option>
+                                        <option value="Malacca">Malacca</option>
+                                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                        <option value="Pahang">Pahang</option>
+                                        <option value="Penang">Penang</option>
+                                        <option value="Perak">Perak</option>
+                                        <option value="Perlis">Perlis</option>
+                                        <option value="Sabah">Sabah</option>
+                                        <option value="Sarawak">Sarawak</option>
+                                        <option value="Selangor">Selangor</option>
+                                        <option value="Terengganu">Terengganu</option>
+                                    </select> -->

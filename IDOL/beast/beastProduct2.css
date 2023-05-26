@@ -1,0 +1,312 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2em;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+h6 {
+    color: #D8D8D8;
+    margin-bottom: 20px;
+}
+
+
+button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a3833;
+}
+
+
+hr {
+    width: 40px;
+    height: 2px;
+    background-color: #fb774b;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-sizing: content-box;
+}
+
+/*Main Product Boxing Layout*/
+.pcontainer {
+    max-width: 100%;
+    height: 100%;
+    /* border: solid black; */
+    display:flex;
+    padding-bottom: 100px;
+}
+
+
+.container-img{
+    /* border: solid black; */
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: auto;
+    padding-top: 5%;
+}
+
+.product-img {
+    margin-left: 25%;
+    max-width: 50%;
+    height: auto;
+    padding-bottom: 10%;
+    transition: .75s;
+}
+
+.product-img:hover{
+    transform: scale(1.5);
+}
+
+.small-img-group {
+    display:flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: auto;
+    cursor: pointer;
+}
+
+.small-img-col:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.small-img {
+    padding-left: 5%;
+    padding-right: 6%;
+}
+
+
+.pcontainer-product{
+    /* border: solid black; */
+    width: 55%;
+    height: 100%;
+    padding-left: 100px;
+}
+
+.ptitle {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.sizeselect {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.product select {
+    display: block;
+    padding: 5px 10px;
+}
+
+.product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+.buy-btn {
+    background: #fb774b;
+    opacity: 1;
+    transition: 0.3s all;
+}
+
+.pdes {
+    padding-top:35px;
+    padding-bottom: 30px;
+}
+
+.product-desc {
+    padding-top:20px;
+    padding-bottom: 10px;
+}
+span b{
+    font-weight: 600;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.product .buy-btn {
+    background: #fb774b;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+button, input {
+    overflow: visible;
+}
+
+
+/*Related Product*/
+.rpcontainer {
+    max-width: 100%;
+    padding-bottom: 100px;
+}
+
+.rproducth{
+    text-align: center;
+}
+
+.rpitemlist{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.rpname {
+    padding-top: 20px;
+}
+
+.rpprice {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rogerp1 img, .rogerp2 img, .pewdp1 img, .pewdp2 img, .beastp1 img, .beastp2 img{
+    width: 300px;
+}
+
+.rpitem{
+    transition: .25s;
+}
+
+.rpitem:hover{
+    transform: scale(1.15);
+    background-color: rgba(211, 211, 211, 0.311);
+}
+
+@media screen and (min-width:881px) {
+    
+/*Transition*/
+.rogerp1 img, .rogerp2 img, .pewdp1 img, .pewdp2 img, .beastp1 img, .beastp2 img{
+    transition: .75s;
+}
+
+.rogerp1 img:hover, .rogerp2 img:hover, .pewdp1 img:hover, .pewdp2 img:hover, .beastp1 img:hover, .beastp2 img:hover{
+    opacity: 0;
+}
+
+
+.rogerp1{
+    background-image: url('../img/shirt1back.jpg');
+    background-size: 100% auto;
+}
+
+
+.rogerp2{
+    background-image: url('../img/shirt2back.png');
+    background-size: 100% auto;
+}
+
+.pewdp1{
+    background-image: url('../img/keyboard2.png');
+    background-size: 100% auto;
+}
+
+.pewdp2{
+    background-image: url('../img/mouse2.png');
+    background-size: 100% auto;
+}
+
+.beastp1{
+    background-image: url('../img/mrbyellow2.jpg');
+    background-size: 100% auto;
+}
+
+.beastp2{
+    background-image: url('../img/mrbblue2.jpg');
+    background-size: 100% auto;
+}
+
+
+}
+
+
+@media screen and (max-width:880px) {
+    .rpitemlist {
+        flex-direction: column;
+    }
+
+    .img-fluid {
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+
+    .rpname {
+        padding-bottom: 10px;
+    }
+
+    .pcontainer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .container-img {
+        padding-top: 80px;
+        margin-left: 29%;
+    }
+
+    .pcontainer-product {
+        padding-top: 50px;
+        margin-left: 23%;
+        padding-left: 0;
+    }
+
+
+
+}
